@@ -1,0 +1,718 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&display=swap');
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+html, body {
+
+    height: 100%;
+    background: rgb(190, 190, 190);
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*PÁGINA LOGIN*/
+
+.boxLogin {
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    width: 95%;
+    max-width: 600px;
+
+    padding: 20px 2%;
+
+    background: white;
+    box-shadow: 0px 0px 14px 12px rgba(0, 0, 0, 0.096);
+
+}
+
+.boxLogin h2 {
+
+    margin: 12px 0;
+    font-size: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(31, 31, 31);
+
+}
+.boxLogin h3 {
+
+    margin-top: 14px;
+    background-color: rgb(245, 56, 56);
+    color: white;
+    text-align: center;
+    padding: 8px;
+
+}
+
+.boxLogin h3 span {
+
+    position: relative;
+
+    top: 4px;
+
+    margin: 2px 4px;
+    
+
+}
+
+.boxLogin input[type=text], .boxLogin input[type=password] {
+
+    width: 100%;
+    height: 50px;
+
+    padding-left: 8px;
+    margin-top: 8px;
+
+    border: 1px solid #b9b9b9;
+
+}
+
+.boxLogin input[type=submit] {
+
+    width: 130px;
+    height: 35px;
+
+    padding-left: 0;
+    margin-top: 12px;
+
+    background: #2962ff;
+    color: white;
+
+    border: 1px solid #1c49c2;
+
+    cursor: pointer;
+
+}
+
+.formGroupLogin:nth-of-type(2) {
+
+    position: relative;
+    top: 24px;
+
+}
+
+/*FIM PÁGINA LOGIN*/
+
+/*------------*/
+
+.right {
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.w100 {
+
+    width: 100%;
+
+}
+
+.w50 {
+    width: 49%;
+}
+
+.center {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2%;
+    margin: auto;
+}
+
+/*------------*/
+
+div.sidebar {
+
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 250px;
+    height: 100vh;
+
+    padding: 10px 0;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    background: linear-gradient(to right, #424242, #313131);
+
+}
+
+.sidebar .menuWrapper {
+    width: 100%;
+}
+
+.userBox .avatar {
+
+    width: 110px;
+    height: 110px;
+
+    margin: auto;
+
+    border: 3px solid #202020;
+    border-radius: 50%;
+
+}
+
+.userBox .avatar span {
+
+    position: relative;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    font-size: 5em;
+    color: white;
+
+}
+
+.imgAvatar {
+    text-align: center;
+}
+
+.imgAvatar img {
+
+    display: inline-block;
+    width: 68%;
+    max-height: 160px;
+    border-radius: 50%;
+    border: 3px solid #202020;
+
+}
+
+.userBox .nome {
+
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.userBox .nome p {
+
+    color: white;
+    margin-top: 5px;
+
+} 
+
+.sidebar .abas {
+    margin-top: 14px;
+    width: 100%;
+}
+
+.sidebar .abas h2 {
+
+    padding: 10px;
+    font-size: 1.2em;
+    background: rgb(32, 32, 32);
+    color: white;
+    font-weight: normal;
+
+}
+
+.sidebar .abas a {
+
+    display: inline-block;
+
+    width: 100%;
+    padding: 3%;
+
+    color: white;
+    border-bottom: 1px solid rgb(32, 32, 32);
+    text-decoration: none;
+    font-size: 1em;
+
+    transition: 0.5s;
+
+}
+
+.sidebar .abas a:hover {
+
+
+    padding: 3%;
+
+    color: white;
+    background: rgb(95, 95, 95);
+    font-size: 1.2em;
+
+}
+
+a.activeMenu {
+
+    padding: 3%;
+
+    color: white;
+    background: rgb(122, 122, 122);
+    font-size: 1.2em !important;
+
+}
+
+a.activeMenu::before {
+    content: '> ';
+}
+
+header {
+
+    position: relative;
+
+    left: 250px;
+
+    width: calc(100% - 250px);
+    padding: 10px 0;
+
+    background: #212121;
+
+}
+
+header .logout a, header .logout span {
+
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+
+}
+
+.menuBtn {
+
+    color: white;
+    cursor: pointer;
+
+}
+
+.btnHome a {
+    color: white;
+    
+}
+
+.menuBtn span{
+
+    font-size: 2em;
+
+}
+
+.btnHome span {
+    font-size: 1.8em;
+}
+
+main {
+
+    position: relative;
+    left: 250px;
+
+    width: calc(100% - 300px);
+    padding: 10px;
+
+}
+
+main .boxContent {
+
+    padding: 10px;
+    margin-bottom: 20px;
+
+    background: white;
+
+}
+
+.boxContent h2 {
+
+    color: rgb(19, 19, 19);
+    font-size: 1.2em;
+
+}
+
+.boxContent h2 span {
+
+    display: inline-block;
+    position: relative;
+    top: 2px;
+
+}
+
+.boxStat {
+
+    margin: 16px 0;
+}
+
+.boxStat .singleStat {
+
+    display: inline-block;
+    float: left;
+    width: 30%;
+    height: 120px;
+    padding: 12px 2%;
+    margin: 10px 8px;
+    color: white;
+    font-weight: 300;
+
+}
+
+.boxStat .singleStat h2 {
+
+    margin: 8px 0;
+    font-size: 1.8em;
+    font-weight: 300;
+    color: white;
+
+}
+
+.boxStat .singleStat p {
+    font-size: 1.2em;
+}
+
+.singleStat:nth-of-type(1) {
+
+    background: rgb(94, 255, 94);
+    box-shadow: 2px 4px 0 0 rgb(73, 202, 73);
+
+}
+
+.singleStat:nth-of-type(2) {
+
+    background: rgb(255, 167, 94);
+    box-shadow: 2px 4px 0 0 rgb(202, 150, 73);
+
+}
+
+.singleStat:nth-of-type(3) {
+
+    background: rgb(255, 94, 94);
+    box-shadow: 2px 4px 0 0 rgb(202, 73, 73);
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .boxContent {
+        text-align: center;
+    }
+
+    .boxStat .singleStat {
+
+        display: inline-block;
+        width: 90%;
+        margin: 10px 0;
+    }
+
+}
+
+/*TABELA*/
+
+.table {
+
+    max-width: 1200px;
+    margin: 20px auto;
+
+}
+
+.row {
+
+    background: rgb(204, 204, 204);
+    padding: 8px;
+
+}
+
+.row:nth-of-type(1) {
+
+    padding: 10px;
+    font-weight: bold;
+    background: #202020;
+    color: white;
+
+}
+
+.row:nth-of-type(2n) {
+
+    background: rgb(216, 216, 216);
+
+}
+
+.col {
+
+    float: left;
+    width: 33%;
+
+}
+
+.boxContent form {
+
+    margin: 30px 0;
+    padding: 12px;
+
+}
+
+.boxContent label {
+
+    display: block;
+    font-weight: 300;
+
+}
+
+.boxContent .formGroup {
+
+    margin: 15px 0;
+
+}
+
+.boxContent .formGroup input{
+
+    width: 100%;
+    height: 50px;
+
+    padding: 8px;
+    border: 1px solid #b8b8b8;
+
+}
+
+.boxContent .formGroup input[type=file] {
+
+    border: 1px solid #ccc;
+
+}
+
+.boxContent form .formGroup select {
+
+    width: 100%;
+    height: 50px;
+
+    padding: 8px;
+    border: 1px solid #b8b8b8;
+
+}
+
+.boxContent .formGroup input[type=submit] {
+
+    width: 300px;
+    height: 50px;
+
+    padding-left: 0;
+    margin-top: 12px;
+
+    background: #10df2c;
+    color: white;
+    font-size: 1.5em;
+
+    border: 1px solid #08a31d;
+
+    cursor: pointer;
+
+}
+
+.boxContent .formGroup textarea {
+
+    width: 100%;
+    height: 200px;
+    padding: 12px;
+    border: 1px solid #b8b8b8;
+    resize: none;
+
+}
+
+.boxContent .tableWraper {
+    overflow-x: auto;
+}
+
+.boxContent table {
+
+    width: 100%;
+    min-width: 900px;
+    margin-top: 20px;
+    border-collapse: collapse;
+
+}
+
+.boxContent table tr {
+    background: rgb(204, 204, 204);
+}
+
+.boxContent table td {
+
+    padding: 12px;
+    text-align: center;
+
+}
+
+.boxContent table th {
+
+    padding: 12px;
+    background: #202020;
+    color: white;
+
+}
+
+.boxContent table a {
+
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.boxContent table a span {
+
+    position: relative;
+    top: 5px;
+
+}
+
+.boxContent table a span.shadow {
+    background: rgb(44, 44, 44);
+}
+
+.boxContent table a.editBtn {
+
+    background: rgb(40, 101, 214);
+    box-shadow: 2px 3px rgb(22, 68, 153);
+
+}
+
+.boxContent table a.deleteBtn {
+
+    background: rgb(214, 40, 40);
+    box-shadow: 2px 3px rgb(153, 22, 22);
+
+}
+
+.boxContent table a.editBtn:hover {
+
+    background: rgb(51, 133, 255);
+
+}
+
+.boxContent table a.deleteBtn:hover {
+
+    background: rgb(255, 51, 51);
+
+}
+
+.boxContent table tr:nth-of-type(2n+1) {
+    background: rgb(216, 216, 216);
+}
+
+.boxContent .depoiButtons {
+
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+.boxContent .depoiButtons a {
+
+    padding: 8px 12px;
+    color: black;
+    text-decoration: none;
+    background: rgb(216, 216, 216);
+
+}
+
+.boxContent .depoiButtons a.selected {
+
+    background: rgb(187, 187, 187);
+
+}
+
+/*ALERT MESSAGES*/
+
+.boxContent .error, .boxContent .success {
+
+    background-color: rgb(245, 56, 56);
+    border: 1px solid rgb(207, 41, 41);
+    color: white;
+    text-align: center;
+    padding: 8px;
+
+}
+
+.boxContent .success {
+
+    background-color: rgb(56, 100, 245);
+    border: 1px solid rgb(41, 80, 207);
+
+}
+
+.boxContent .success span, .boxContent .error span {
+
+    position: relative;
+
+    top: 4px;
+
+    margin: 0px 4px;
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .sidebar {
+
+       display: none;
+
+    }
+
+    header {
+
+        left: 0;
+        width: 100%;
+
+    }
+
+    main {
+
+        left: 0;
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+
+    .menuWrapper {
+        width: 200px !important;
+    }
+
+    .boxContent table {
+
+        overflow: auto;
+
+    }
+
+}

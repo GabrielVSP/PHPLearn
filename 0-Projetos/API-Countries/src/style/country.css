@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
+main.country {
+  font-family: Roboto;
+}
+main.country section {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 14px;
+  box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.425);
+}
+main.country section div.mainInfo {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main.country section div.mainInfo img {
+  width: 45%;
+}
+main.country section div.extraInfo {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main.country section div.extraInfo p {
+  flex-basis: 100%;
+  margin: 4px 0;
+  border-bottom: 1px solid grey;
+}
+main.country section div.border {
+  width: 1px;
+  background: rgb(51, 51, 51);
+}
+main.country div {
+  margin-top: 10px;
+  text-align: center;
+}
+main.country div a {
+  color: black;
+  transition: 0.3s;
+}
+main.country div a:hover {
+  font-size: 1.3em;
+}/*# sourceMappingURL=country.css.map */

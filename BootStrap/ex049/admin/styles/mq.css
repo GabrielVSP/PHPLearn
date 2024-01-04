@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+
+    .panel {
+
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+
+    .utilities, .sidebar {
+
+        margin-top: 18px;
+        width: 90%;
+
+    }
+
+}

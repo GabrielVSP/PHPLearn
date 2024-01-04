@@ -1,0 +1,103 @@
+section#home div.banner {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 70vh;
+  background: url("../../images/banner.jpg") no-repeat;
+  background-size: cover;
+}
+section#home div.shadow {
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.7215686275);
+}
+section#home section#about {
+  height: 70vh;
+  padding: 2% 2%;
+}
+section#home section#about h2 {
+  max-width: 700px;
+  margin: 10px 0;
+  border-bottom: 1px solid orange;
+  font-size: 2em;
+  font-weight: normal;
+  color: rgb(230, 150, 3);
+}
+section#home section#about p {
+  max-width: 900px;
+  margin: 15px 0;
+  color: white;
+  text-align: justify;
+  text-indent: 6px;
+  line-height: 29px;
+  font-size: 1.2em;
+}
+section#home section#about strong {
+  color: orange;
+}
+section#home section#login {
+  display: flex;
+}
+section#home section#login div.register {
+  width: 50%;
+  padding: 10px 2%;
+  background: rgb(26, 26, 26);
+}
+section#home section#login div.register h2 {
+  color: white;
+}
+section#home section#login div.register input[type=submit] {
+  background: orange;
+  border: 1px solid rgb(255, 136, 0);
+}
+section#home section#login div.login {
+  width: 50%;
+  padding: 10px 2%;
+  background: white;
+}
+section#home section#login div.login label {
+  color: black;
+}
+section#home section#login div.login input[type=submit] {
+  background: rgb(26, 26, 26);
+  color: white;
+}
+section#home section#login h2 {
+  margin: 10px 0;
+  text-align: center;
+  font-weight: normal;
+}
+section#home section#login form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section#home section#login div.inputGroup {
+  width: 80%;
+  margin: 10px 0;
+}
+section#home section#login label {
+  margin: 5px 0;
+  color: white;
+  font-size: 1.3em;
+  text-align: left;
+}
+section#home section#login input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+}
+section#home section#login input[type=submit] {
+  width: 30%;
+  margin: 10px 0;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  cursor: pointer;
+}/*# sourceMappingURL=home.css.map */

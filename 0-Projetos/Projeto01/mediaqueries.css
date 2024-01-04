@@ -1,0 +1,90 @@
+@media screen and (max-width: 768px) {
+
+	.w50 {
+
+		padding: 20px;
+		width: 100%;
+
+	}
+
+	.w33 {
+
+		width: 100%;	
+
+	}
+
+	img {
+
+		float: none !important;
+		display: block;
+		max-width: 500px;
+		margin: 0 auto;
+
+	}
+
+	.habisBox {
+
+		float: none;
+
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+
+	.desktop {
+
+		display: none;
+
+	}
+
+	.mobile {
+
+		display: block;
+
+	}
+
+	.mobileMenu {
+
+		cursor: pointer;
+
+	}
+
+	.mobile ul {
+
+		display: none;
+		position: absolute;
+
+		top: 55px;
+		left: 0;
+
+		width: 100%;
+		text-align: center;
+
+		z-index: 3;
+
+	}
+
+	.mobile li {
+
+		display: block;
+		width: 100%;
+
+		padding: 8px 0;
+		
+		background: white;
+
+	}
+
+
+	.mobile li a {
+
+		display: block;
+
+		font-size: 1.1em;
+		color: #444;
+		text-decoration: none;
+
+	}
+
+}

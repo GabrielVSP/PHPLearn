@@ -1,0 +1,26 @@
+@import './variables/variables.scss';
+
+main.home {
+
+    display: flex;
+    justify-content: center;
+
+    font-family: $roboto;
+
+    select {
+
+        height: 30px;
+        padding: 0 8px;
+
+        border-radius: 15px;
+
+        option {
+
+            padding: 4px;
+            border-radius: 15px;
+
+        }
+
+    }
+
+}

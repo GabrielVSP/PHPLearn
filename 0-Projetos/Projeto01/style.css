@@ -1,0 +1,551 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&display=swap');
+
+* {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto;
+
+}
+
+img {
+
+	width: 100%;
+	height: 40px;
+
+}
+
+/*.imgContainer {
+
+	width: 40px;
+	height: 40px;
+
+}*/
+
+/*--------*/
+
+.overlayLoad {
+
+	display: none;
+
+	position: fixed;
+
+	width: 100%;
+	height: 100%;
+
+	background: rgba(0, 0, 0, 0.35);
+
+	z-index: 10;
+
+}
+
+.error {
+
+	display: none;
+
+	position: fixed;
+
+	left: 20px;
+	top: 0px;
+
+	width: 200px;
+	padding: 2px 2%;
+
+	background: rgba(236, 13, 13, 0.548);
+	color: white;
+
+	z-index: 10;
+
+}
+
+.success {
+
+	display: none;
+
+	position: fixed;
+
+	left: 20px;
+	top: 0px;
+
+	width: 200px;
+	padding: 10px 2%;
+
+	background: rgba(19, 95, 236, 0.548);
+	color: white;
+
+	z-index: 10;
+
+}
+
+
+.overlayLoad img {
+
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+
+	width: 64px;
+	height: 64px;
+
+	transform: translate(-50%, -50%);
+
+}
+
+#error {
+
+	color: red;
+	padding: 20px;
+	white-space: pre-line;
+
+}
+
+.center {
+
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 2%;
+	margin: 0 auto;
+
+}
+
+.w33 {
+	width: 33.3%;
+	padding: 0 2%;
+}
+
+.w50 {
+	width: 50%;
+	padding: 0 2%;
+}
+
+.clear {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/*---------------------*/
+
+header a {cursor: pointer;}
+
+header {
+
+	width: 100%;
+
+	padding: 15px 10px;
+
+	background: #3D437A;
+	color: white;
+	font-weight: 300;
+
+}
+
+header .logo {
+
+	font-size: 1.6em;
+
+}
+
+nav.desktop a {
+
+	padding: 8px;
+
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	font-size: 1.4em;
+	font-weight: 300;
+
+
+}
+
+header nav a:hover {
+
+	text-decoration: underline;
+	font-weight: normal;
+
+	transition: 0.3s;
+
+}
+
+.mobile {
+
+	display: none;
+
+}
+
+.overlay {
+
+	position: absolute;
+
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background: rgba(0,0,0, 0.45);
+
+	z-index: 2;
+}
+
+main {
+
+	position: relative;
+
+	width: 100%;
+	height: 500px;
+
+	background: rgb(41, 41, 41);
+
+}
+
+.banner {
+
+	position: relative;
+	display: none;
+
+	width: 100%;
+	height: 100%;
+
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+	z-index: 1;
+
+}
+
+.circles {
+
+	position: absolute;
+
+	bottom: 10px;
+	left: 50%;
+
+	transform: translateX(-50%);
+	text-align: center;
+
+	z-index: 3;
+
+}
+
+.circles span {
+
+	display: inline-block;
+
+	width: 16px;
+	height: 16px;
+	margin: 0 8px;
+
+	background: rgb(139, 139, 139);
+	border-radius: 50%;
+
+	cursor: pointer;
+
+}
+
+.circles span.activeSlider {
+
+	background: white;
+
+}
+
+main form {
+
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+
+	max-width: 500px;
+
+	z-index: 3;
+
+}
+
+main form h2 {
+
+	margin: 20px 0;
+
+	color: ghostwhite;
+	font-weight: 300;
+	font-size: 2em;
+	text-align: center;
+
+}
+
+main form input[type=email] {
+
+	width: 100%;
+	height: 70px;
+
+	max-width: 700px;
+	padding: 5px;
+	margin-bottom: 16px;
+
+	color: grey;
+	border: 0;
+	border-radius: 8px;
+
+	font-size: 1.5em;
+
+}
+
+main form input[type=submit] {
+
+	width: 100%;
+	height: 70px;
+
+	max-width: 600px;
+	padding: 5px;
+	margin-bottom: 16px;
+
+	color: white;
+	text-transform: uppercase;
+	background: rgb(28, 217, 192);
+	border: 0;
+	border-radius: 8px;
+
+	font-size: 1.4em;
+
+	cursor: pointer;
+
+}
+
+.description {
+
+	padding: 30px 5px;
+	text-align: justify;
+
+}
+
+.description h2 {
+
+	margin-bottom: 10px;
+	font-size: 2em;
+	font-weight: bold;
+	color: #444;
+
+}
+
+.description p {
+
+	text-indent: 26px;
+	line-height: 32px;
+	font-size: 1.3em;
+	margin: 8px 0;
+	color: #444;
+
+}
+
+.description img {
+
+	width: 100%;
+	height: 50%;
+	
+	min-height: 400px;
+
+}
+
+section.habilidades {
+
+	padding: 40px 0;
+	background: #E2E2E2;
+
+}
+
+.habilidades .title {
+
+	font-size: 1.8em;
+	font-weight: normal;
+	text-align: center;
+	color: #999;
+
+}
+
+.habsBox {
+
+	margin: 20px 0;
+	display: none;
+	text-align: justify;
+
+}
+
+.habsBox .imgContainer img {
+
+	width: 100%;
+	height: 100%;
+
+}
+
+.habsBox .imgContainer {
+
+	width: 80px;
+	height: 80px;
+
+	margin: 10px auto;
+
+}
+
+.habsBox h3 {
+
+	text-align: center;
+	color: rgb(70, 70, 70, 1.0);
+	font-size: 2em;
+	margin: 10px 0;
+
+}
+
+.habsBox p {
+
+	color: rgb(100, 100, 100, 1.0);
+
+}
+
+section.extras {
+
+	width: 100%;
+	padding: 2%;
+
+	background: #404588;
+	color: white;
+
+}
+
+.depoimentos, .services {
+
+	padding: 0 2%;
+
+}
+
+.extras h2 {
+
+	font-weight: 300;
+	font-size: 1.6em;
+
+}
+
+.depoiSingle {
+
+	padding: 2%;
+	border-bottom: 2px solid #5856AB;
+
+}
+
+.depoiSingle p.description {
+
+	text-indent: 15px;
+	line-height: 28px;
+
+}
+
+.depoiSingle .author {
+
+	font-weight: bold;
+
+}
+
+.servs {
+
+	padding: 2%;
+
+}
+
+.servs ul {
+
+	list-style-position: inside;
+	margin: 20px 0;
+
+}
+
+.servs ul li {
+
+	margin-top: 10px;
+
+}
+
+.fixed {
+
+	position: absolute;
+
+	top: 90%;
+	bottom: 0;
+
+}
+
+footer {
+
+	width: 100%;
+	padding: 2%;
+
+	background: #313462;
+	color: white;
+
+}
+
+footer p {
+
+	font-size: 1.2em;
+	font-weight: lighter;
+	text-align: center;
+
+}
+
+#map {
+
+	width: 100%;
+	height: 400px;
+
+}
+
+.contatoContainer {
+
+	padding: 2% 0;
+	text-align: center;
+
+}
+
+.contatoContainer input, textarea {
+
+	width: 50%;
+	height: 40px;
+
+	max-width: 700px;
+
+	padding: 10px 8px;
+	margin: 8px 0;
+
+	font-size: 1.1em;
+	color: #444;
+	border: 1px solid rgb(100, 100, 100);
+
+}
+
+.contatoContainer textarea {
+
+	height: 120px;
+	resize: none;
+
+}
+
+.contatoContainer input[type=submit] {
+
+	background: #313462;
+	color: white;
+	cursor: pointer;
+
+}

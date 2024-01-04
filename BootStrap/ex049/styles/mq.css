@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+
+    .joinus .container {
+
+        flex-direction: column;
+
+    }
+
+    .about .container {
+
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center !important;
+
+    }
+
+    .about .single {
+        width: 80%;
+    }
+
+    .equipe .single {
+
+        flex-basis: 100%;
+
+    }
+
+    .contact .container {
+
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .contact .form, .contact .prices {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .prices {
+        text-align: center;
+    }
+
+    .prices table {
+        text-align: center;
+        margin: auto;
+    }
+
+}

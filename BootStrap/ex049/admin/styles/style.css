@@ -1,0 +1,92 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*--------------------*/
+
+div.success {
+
+    width: 100%;
+    padding: 4px;
+    margin-top: 12px;
+
+    background: rgb(20, 170, 20);
+    color: white;
+    border: 1px solid rgb(61, 206, 61);
+    text-align: center;
+
+}
+
+div.error {
+
+    width: 100%;
+    padding: 4px;
+    margin: 12px 0;
+
+    background: rgb(170, 20, 20);
+    color: white;
+    border: 1px solid rgb(206, 61, 61);
+    text-align: center;
+
+}
+
+/*--------------------*/
+
+body {
+
+    background: rgb(214, 214, 214);
+
+}
+
+/*LOGIN*/
+
+section.login {
+
+    width: 40%;
+
+}
+
+/*FIM LOGIN*/
+
+.title {
+
+   margin-top: 100px;
+
+}
+
+.panel {
+
+    margin: auto;
+    margin-top: 5 0px;
+
+}
+
+.sidebar {
+    width: 20%;
+}
+
+.utilities {
+    width: 70%;
+}
+
+.utility {
+
+    margin-bottom: 16px;
+
+}
+
+.utility h2 {
+
+    margin: 0;
+
+}
+
+.utility table td {
+
+    vertical-align: middle;
+
+}

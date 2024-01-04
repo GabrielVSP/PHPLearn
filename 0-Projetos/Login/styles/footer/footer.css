@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 2%;
+  background: rgb(75, 75, 75);
+  color: white;
+}
+footer div {
+  width: 30%;
+}
+footer div.logo {
+  display: flex;
+  align-items: center;
+}
+footer div.logo h2 {
+  font-weight: normal;
+}
+footer div.logo img {
+  width: 10%;
+  filter: brightness(100);
+  background: none;
+}
+footer div.social h2 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+footer div.social div {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+footer div.social div a {
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+footer div.social div a:hover {
+  text-decoration: underline;
+}
+footer div.copyright {
+  text-align: right;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,50 @@
+main.contact h1 {
+
+    text-align: center;
+
+}
+
+form {
+
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+
+}
+
+form input {
+
+    width: 100%;
+    height: 46px;
+
+    padding: 6px;
+    margin: 14px 0;
+
+    border: 1px solid grey;
+
+}
+
+form textarea {
+
+    width: 100%;
+    height: 120px;
+
+    padding: 6px;
+
+    border: 1px solid grey;
+
+    resize: none;
+
+}
+
+form input[type=submit] {
+
+    background-color: #3ac46d;
+    color: white;
+    border: 1px solid #16a34a;
+
+    font-size: 1.2em;
+
+    cursor: pointer;
+
+}

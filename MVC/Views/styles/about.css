@@ -1,0 +1,11 @@
+main p.welcome {
+
+    width: 60%;
+    max-width: 600px;
+
+    padding: 8px;
+
+    background-color: rgb(172, 172, 172);
+    border-left: 3px solid rgb(32, 32, 32);
+
+}

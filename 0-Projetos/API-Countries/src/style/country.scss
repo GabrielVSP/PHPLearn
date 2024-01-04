@@ -1,0 +1,82 @@
+@import './variables/variables.scss';
+
+main.country {
+
+    font-family: $roboto;
+
+    section {
+
+        display: flex;
+        justify-content: space-evenly;
+
+        width: 60%;
+        margin: auto;
+        padding: 20px;
+
+        border: 1px solid rgb(179, 179, 179);
+        border-radius: 14px;
+        box-shadow: 3px 3px 7px 0px rgba(0, 0, 0, 0.425);
+
+        div.mainInfo {
+
+            width: 50%;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            img {
+
+                width: 45%;
+
+            }
+
+        }
+
+        div.extraInfo {
+
+            width: 30%;
+
+            display: flex;
+            flex-wrap: wrap;
+
+            p {
+
+                flex-basis: 100%;
+                margin: 4px 0;
+                border-bottom: 1px solid grey;
+
+            }
+
+        }
+
+        div.border {
+
+            width: 1px;
+            background: rgb(51, 51, 51);
+
+        }
+
+    }
+
+    div {
+        
+        margin-top: 10px;
+        text-align: center;
+
+        a {
+
+            color: black;
+            transition: 0.3s;
+
+        }
+
+        a:hover {
+
+            font-size: 1.3em;
+
+        }
+
+    }
+
+}

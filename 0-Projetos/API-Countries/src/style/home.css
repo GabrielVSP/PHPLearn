@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
+main.home {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto;
+}
+main.home select {
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 15px;
+}
+main.home select option {
+  padding: 4px;
+  border-radius: 15px;
+}/*# sourceMappingURL=home.css.map */
