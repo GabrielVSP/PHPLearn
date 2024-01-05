@@ -50,6 +50,12 @@
 
         }
 
+        public function deleteData(Int $id) {
+
+            $this->delete($id);
+
+        }
+
         private function errorHandling(String $type, Int $value, String $desc, String $cpf) {
 
             if($this->checkCPF($cpf) !== 'continue') {

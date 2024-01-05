@@ -89,4 +89,14 @@
 
         }
 
+        protected function delete(Int $id) {
+
+            
+            $pdo = $this->connect();
+            $sql = $pdo->prepare("DELETE FROM boughts WHERE id = ?");
+
+            $sql->execute([$id]);
+
+        }
+
     }

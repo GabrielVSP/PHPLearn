@@ -14,6 +14,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finance Control</title>
+
+    <base href="http://localhost/PHPLearn/0-Projetos/financeControl/">
+
+    <script src="./inc/delete.js" defer></script>
+
 </head>
 <body>
 
@@ -104,6 +109,9 @@
                         <td><?= $list[$key]['value'] ?></td>
                         <td><?= $list[$key]['bType'] === 'in' ? 'Entrada' : 'Saída' ?></td>
                         <td><?= $controller->decypher($list[$key]['cpf'])?></td>
+                        <td>
+                            <button class="delete" id="<?=  $list[$key]['id']?>">Deletar</button>
+                        </td>
                     </tr>
 
                 <?php } ?>
