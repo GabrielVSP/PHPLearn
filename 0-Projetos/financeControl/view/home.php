@@ -17,29 +17,43 @@
 
     <base href="http://localhost/PHPLearn/0-Projetos/financeControl/">
 
+    <link rel="stylesheet" href="./styles/home/home.css">
     <script src="./inc/delete.js" defer></script>
 
 </head>
 <body>
 
+    <header>
+
+        <h1>Omega Finances</h1>
+
+    </header>
+
     <main>
 
         <section class="display">
 
-            <div class="in">
+            <div class="in box">
                 <h2>Lucros</h2>
-                <p>+ <?= "R$" . number_format((float)$controller->getSum('in')[0], 2, ',', '.') ?></p>
+                <div>
+                    <p>+ <?= "R$" . number_format((float)$controller->getSum('in')[0], 2, ',', '.') ?></p>
+                    <img src="./images/arrowup.png" alt="Seta para cima">
+                </div>
             </div>
 
-            <div class="out">
+            <div class="out box">
                 <h2>Perdas</h2>
-                <p>- <?= "R$" . number_format((float)$controller->getSum('out')[0], 2, ',', '.') ?></p>
+                <div>
+                    <p>- <?= "R$" . number_format((float)$controller->getSum('out')[0] * -1, 2, ',', '.') ?></p>
+                    <img src="./images/arrowdown.png" alt="Seta para baixo">
+                </div>
             </div>
 
-            <div class="total">
+            <div class="total box">
                 <h2>Final</h2>
-                <p> <?= "R$" . number_format((float)$controller->getSum('null')[0], 2, ',', '.') ?> </p>
-
+                <div>
+                    <p> <?= "R$" . number_format((float)$controller->getSum('null')[0], 2, ',', '.') ?> </p>
+                </div>
             </div>
 
         </section>
@@ -95,6 +109,7 @@
                     <th>Valor</th>
                     <th>Tipo</th>
                     <th>CPF Registrado</th>
+                    <th>Deletar registro</th>
 
                 </tr>
 
