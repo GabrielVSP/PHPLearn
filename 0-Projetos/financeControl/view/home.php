@@ -69,6 +69,7 @@
                 <input type="number" name="value" id="value" placeholder="Valor" min="0" step="0.01">
 
                 <select name="type" id="type">
+                    <option value="none" disabled selected>Tipo de registro</option>
                     <option value="in">Entrada</option>
                     <option value="out">Saída</option>
                 </select>
@@ -86,7 +87,7 @@
 
             if (isset($_POST['submit'])) {
 
-                $type = $_POST['type'];
+                $type = $_POST['type'] ?? 'none';
                 $desc = $_POST['desc'];
                 $cpf = $_POST['cpf'];
                 $value = $_POST['value'];

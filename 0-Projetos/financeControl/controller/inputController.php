@@ -14,7 +14,7 @@
 
         public function add($type, $value, $desc, $cpf) {
 
-            if($this->errorHandling($type, (int)$value, $desc, $cpf) !== 'continue') {
+            if($this->errorHandling($type, (float)$value, $desc, $cpf) !== 'continue') {
 
                 return;
 
@@ -22,7 +22,7 @@
 
             $regex = preg_replace($this->cpfPattern, '$1.$2.$3-$4', $cpf);
 
-            $this->addBought($type, (int)$value, $desc, $regex);
+            $this->addBought($type, (float)$value, $desc, $regex);
 
         }
 
@@ -56,7 +56,7 @@
 
         }
 
-        private function errorHandling(String $type, Int $value, String $desc, String $cpf) {
+        private function errorHandling(String $type, Float $value, String $desc, String $cpf) {
 
             if($this->checkCPF($cpf) !== 'continue') {
 
@@ -81,7 +81,7 @@
 
             if($this->checkType($type) !== 'continue') {
 
-                $this->message('Invalid type', 'error');
+                $this->message('Tipo inválido', 'error');
                 return;
 
             }
@@ -112,7 +112,7 @@
 
         }
 
-        private function checkValue(Int $value) {
+        private function checkValue(Float $value) {
 
             if(is_numeric($value)) {
 
