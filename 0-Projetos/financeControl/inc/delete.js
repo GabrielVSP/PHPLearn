@@ -19,7 +19,7 @@ buttons.forEach((btn) => {
 
         xmlhttp.onreadystatechange = () => {
 
-            if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+            if(xmlhttp.readyState === 4 && xmlhttp.status == 200)
             {
                console.log(xmlhttp)
                location.href = base.href

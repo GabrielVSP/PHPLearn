@@ -1,9 +1,7 @@
 <?php
 
     declare(strict_types = 1);
-    session_write_close();
-    session_set_cookie_params(3600, "localhost/PHPLearn/0-Projetos/TimeCounter/", 'localhost', true);
-    //session_destroy();
+    
     include_once ROOT . "/controller/loginController.php";
 
 ?>
