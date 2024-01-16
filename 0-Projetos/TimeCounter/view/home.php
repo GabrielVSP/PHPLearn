@@ -1,3 +1,5 @@
+<?php  $uri = $_SERVER["REQUEST_URI"]; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,33 +18,33 @@
     <header>
 
         <nav>
-            <a href="#">Home</a>
+            <a href="<?= $uri?>">Home</a>
+            <a href="<?= $uri?>history">History</a>
             <a href="#" id="logout">Logout</a>
         </nav>
 
     </header>
 
-    <main>
+    <?php 
 
-        <h2>Hello, <?= $_SESSION['user'][1]?>!</h2>
+        switch ($uri) {
 
-        <section>
+            case "/PHPLearn/0-Projetos/TimeCounter/":
+                require ROOT . "/view/main.php";
+                break;
 
-            <div>
+            case "/PHPLearn/0-Projetos/TimeCounter/history":
+                require ROOT . "/view/history.php";
+                break;
 
-                <h3 class="timerName">Nome</h3>
-                <h2 class="timer">00:00:00</h2>
+            default:
+                require ROOT . "/view/404.php";
+                break;
 
-            </div>
+        }
 
-            <input type="text" name="timerName" id="timerName">
 
-            <button class="init">Iniciar timer</button>
-            <button class="end"  disabled>Finalizar</button>
-
-        </section>
-
-    </main>
+    ?>
 
 </body>
 </html>

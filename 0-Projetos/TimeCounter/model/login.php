@@ -1,6 +1,6 @@
 <?php
 
-    include ROOT . "/inc/db.php";
+    require_once ROOT . "/inc/db.php";
 
     class Login extends DB {
 
