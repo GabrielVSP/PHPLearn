@@ -61,21 +61,21 @@ function init(status) {
 
     interval = setInterval(() => {
         
-        if(seconds == 60) {
+        seconds += 1
+
+        if(seconds == 59) {
 
             seconds = 0
             minutes += 1
 
         }
 
-        if (minutes == 60) {
+        if (minutes == 59) {
 
             minutes = 0
             hours += 1
 
         }
-
-        seconds += 1
 
         let sample = `${hours.toString.length == 1 ? "0"+hours : hours}:${minutes.toString().length == 1 ? "0"+minutes : minutes}:${seconds.toString().length == 1 ? "0"+seconds : seconds}`
 

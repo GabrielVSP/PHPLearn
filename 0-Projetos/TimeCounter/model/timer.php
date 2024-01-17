@@ -21,4 +21,21 @@
 
         }
 
+        protected function fetch($email) {
+
+            $pdo = $this->connect();
+
+            $sql = $pdo->prepare("SELECT * FROM history WHERE user = ?");
+
+            $sql->execute([$email]);
+            $sql = $sql->fetchAll();
+
+            if(count($sql) > 0) {
+
+                return $sql;
+
+            }
+
+        }
+
     }

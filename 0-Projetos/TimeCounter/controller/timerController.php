@@ -10,4 +10,10 @@
 
         }
 
+        public function fetchData($email) {
+
+            return $this->fetch($email);
+
+        }
+
     }

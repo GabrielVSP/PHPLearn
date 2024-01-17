@@ -8,7 +8,6 @@
     <title>Time counter</title>
 
     <script src="scripts/logout.js" defer></script>
-    <script src="scripts/timer.js" defer></script>
 
 </head>
 <body>
@@ -18,7 +17,7 @@
     <header>
 
         <nav>
-            <a href="<?= $uri?>">Home</a>
+            <a href="<?= BASE_URL?>">Home</a>
             <a href="<?= $uri?>history">History</a>
             <a href="#" id="logout">Logout</a>
         </nav>
