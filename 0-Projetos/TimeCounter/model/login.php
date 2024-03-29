@@ -8,20 +8,25 @@
 
             $pdo = $this->connect();
             $sql = $pdo->prepare("SELECT * FROM users WHERE email = ?");
-            
+
             if($sql->execute([$email])) {
 
                 $sql = $sql->fetch();
+                
+                if(is_array($sql)) {
 
-                if(count($sql) > 0) {
+                    //return $sql;
+                   
+                    if(count($sql) > 0){
 
-                    if(password_verify($pass, $sql['password'])) {
+                        if(password_verify($pass, $sql['password'])) {
 
-                        session_start();
+                            session_start();
 
-                        $_SESSION['user'] = [$email, $sql["username"]];
-                        header("Location: http://localhost/PHPLearn/0-Projetos/TimeCounter/");
+                            $_SESSION['user'] = [$email, $sql["username"]];
+                            header("Location: http://localhost/PHPLearn/0-Projetos/TimeCounter/");
 
+                        }
                     }
 
                 }
