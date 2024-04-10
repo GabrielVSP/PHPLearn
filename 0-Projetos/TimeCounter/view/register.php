@@ -11,22 +11,22 @@
 
                     <div class="my-2 w-full">
                         <label for="name" class="text-zinc-300 p-2">Username</label>
-                        <input type="text" name="name" id="name" class="w-full p-2 border border-solid border-zinc-400 bg-zinc-700 rounded-md">
+                        <input type="text" name="name" id="name" class="w-full p-2 text-white border border-solid border-zinc-400 bg-zinc-700 rounded-md">
                     </div>
 
                     <div class="my-2 w-full">
                         <label for="email" class="text-zinc-300 p-2">E-mail</label>
-                        <input type="email" name="email" id="email" class="w-full p-2 border border-solid border-zinc-400 bg-zinc-700 rounded-md">
+                        <input type="email" name="email" id="email" class="w-full p-2 text-white border border-solid border-zinc-400 bg-zinc-700 rounded-md">
                     </div>
 
                     <div class="my-2 w-full">
                         <label for="pass" class="text-zinc-300 p-2">Password</label>
-                        <input type="password" name="pass" id="pass" class="w-full p-2 border border-solid border-zinc-400 bg-zinc-700 rounded-md">
+                        <input type="password" name="pass" id="pass" class="w-full p-2 text-white border border-solid border-zinc-400 bg-zinc-700 rounded-md">
                     </div>
 
                     <div class="my-2 w-full">
                         <label for="passR" class="text-zinc-300 p-2">Repeat Password</label>
-                        <input type="password" name="passR" id="passR" class="w-full p-2 border border-solid border-zinc-400 bg-zinc-700 rounded-md">
+                        <input type="password" name="passR" id="passR" class="w-full p-2 text-white border border-solid border-zinc-400 bg-zinc-700 rounded-md">
                     </div>
 
                     <?php
