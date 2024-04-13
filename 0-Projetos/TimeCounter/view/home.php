@@ -34,33 +34,21 @@
 
         <h2 class="text-2xl text-lime-900 bg-lightred p-1">Time Counter</h2>
 
-        <nav class="p-3 flex lg:basis-1/6 justify-evenly items-center hidden lg:block">
+        <nav class="p-3 lg:basis-1/6 justify-evenly items-center">
 
-            <div class="lg:flex basis-2/5 justify-evenly">
-                <a href="<?= BASE_URL?>" class="text-lightred text-lg">Home</a>
-                <a href="<?= $uri?>history" class="text-lightred text-lg">History</a>
-            </div>
-
-            <div class="bg-zinc-950 w-px h-4 hidden lg:block"></div>
-
-            <a href="#" id="logout" class="text-lightred text-lg">Logout</a>
-        </nav>
-
-        <div>
-
-            <button class="menuBtn text-white">
+            <button class="menuBtn text-white md:hidden">
                 <span class="material-symbols-outlined text-4xl">
                     menu
                 </span>
             </button>
 
-            <nav class="hidden menu">
-                <a href="<?= BASE_URL?>" class="text-lightred text-lg">Home</a>
-                <a href="<?= $uri?>history" class="text-lightred text-lg">History</a>
-                <a href="#" id="logout" class="text-lightred text-lg">Logout</a>
-            </nav>
+            <div class="menu pt-4 right-full fixed transition-all md:static md:right-0 flex flex-col md:flex-row md:w-1/6 w-full bg-zinc-700 opacity-90">
+                <a href="<?= BASE_URL?>" class="text-lightred text-lg p-3 md:p-1 hover:bg-lightred hover:text-zinc-700" style="transition: 0.8s">Home</a>
+                <a href="<?= $uri?>history" class="text-lightred text-lg p-3 md:p-1 hover:bg-lightred hover:text-zinc-700" style="transition: 0.8s">History</a>
+                <a href="#" id="logout" class="text-lightred text-lg p-3 md:p-1 hover:bg-lightred hover:text-zinc-700" style="transition: 0.8s">Logout</a>
+            </div>
 
-        </div>
+        </nav>
 
     </header>
 
