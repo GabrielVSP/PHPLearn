@@ -19,11 +19,23 @@
                         lightred: '#C6D57E',
                         cleanred: '#95554E',
 
+                    },
+                    minHeight: {
+                        '16/2': '80vh',
                     }
                 }
             }
             }
     </script>
+
+    <style>
+
+        html {
+            min-height: 100vh;
+            background: #C6D57E;
+        }
+
+    </style>
 
 </head>
 <body>
