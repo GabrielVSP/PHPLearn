@@ -8,27 +8,27 @@
 
 ?>
 
-<table>
+<table class="w-full text-center p-5 mt-4">
 
     <thead>
 
-        <th>ID</th>
-        <th>Name</th>
-        <th>Duration</th>
-        <th>Init</th>
-        <th>End</th>
+        <th class="bg-zinc-700 text-white p-2 border border-black">ID</th>
+        <th class="bg-zinc-700 text-white p-2 border border-black">Name</th>
+        <th class="bg-zinc-700 text-white p-2 border border-black">Duration</th>
+        <th class="bg-zinc-700 text-white p-2 border border-black">Init</th>
+        <th class="bg-zinc-700 text-white p-2 border border-black">End</th>
 
     </thead>
 
     <tbody>
 
         <?php if($data !== null) { foreach($data as $key => $value) {?>
-            <tr>
-                <td><?=$value['id']?></td>
-                <td><?=$value['name']?></td>
-                <td><?=$value['duration']?></td>
-                <td><?=$value['init']?></td>
-                <td><?=$value['end']?></td>
+            <tr class="odd:bg-[#c2cd8b] bg-[#96a355]">
+                <td class="border border-black"><?=$value['id']?></td>
+                <td class="border border-black"><?=$value['name']?></td>
+                <td class="border border-black"><?=$value['duration']?></td>
+                <td class="border border-black"><?=$value['init']?></td>
+                <td class="border border-black"><?=$value['end']?></td>
             </tr>
         <?php }} ?>
 
